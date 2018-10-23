@@ -18,9 +18,9 @@ function driverNamesWithRevenueOver(drivers, revenue) {
 
 function exactMatch(drivers, object) {
   //Object.keys() returns an array of a given object's own properties
-  key = Object.keys(object)
+  let key = Object.keys(object)[0]
   //console.log(key)
-  return drivers.map(driver => driver[key] === object[key])
+  return drivers.filter(driver => driver[key] === object[key])
   //return driver objects whose key matches the object's key
 
   //console.log(list)
