@@ -25,11 +25,11 @@ function exactMatch(drivers, object) {
   //console.log(list)
 }
 
-<<<<<<< HEAD
+
 //or can do
-=======
+
 //or can do 
->>>>>>> a5b796cd9b4a38af4552d1a8ec54830cfbacb673
+
 //function exactMatch (drivers, matcher) {
   //return drivers.filter(function (driver) {
   //  let matches = false;
