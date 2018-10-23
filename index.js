@@ -1,9 +1,9 @@
 // Code your solution here:
 function driversWithRevenueOver(drivers, revenue) {
   //filter drivers to find the one's w/revenue > passed in revenue
-  
+  return drivers.filter(driver => driver.revenue > revenue)
   //return function from above, map it & return driver.name
-
+}
 //or can do
 //function driverNamesWithRevenueOver(drivers, revenue) {         //this option repeats the code from 1st
 // list = drivers.filter(driver => driver.revenue > revenue)      //function. Then maps the list & returns
@@ -39,4 +39,3 @@ function exactMatch(drivers, object) {
 
 function exactMatchToList(drivers, object) {
   //return function from above, map it & return driver.name
-  
