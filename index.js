@@ -22,7 +22,6 @@ function exactMatch(drivers, object) {
   //console.log(key)
   return drivers.filter(driver => driver[key] === object[key])
   //return driver objects whose key matches the object's key
-
   //console.log(list)
 }
 
@@ -44,4 +43,5 @@ function exactMatch(drivers, object) {
 
 function exactMatchToList(drivers, object) {
   //return function from above, map it & return driver.name
+  return exactMatch(drivers, object).map(driver => driver.name)
 }
