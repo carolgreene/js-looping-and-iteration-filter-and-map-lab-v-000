@@ -4,6 +4,10 @@ function driversWithRevenueOver(drivers, revenue) {
   return drivers.filter(driver => driver.revenue > revenue)
   //return function from above, map it & return driver.name
 }
+
+function driverNamesWithRevenueOver(drivers, revenue) {
+  return driversWithRevenueOver(drivers, revenue).map(driver => driver.name)
+}
 //or can do
 //function driverNamesWithRevenueOver(drivers, revenue) {         //this option repeats the code from 1st
 // list = drivers.filter(driver => driver.revenue > revenue)      //function. Then maps the list & returns
